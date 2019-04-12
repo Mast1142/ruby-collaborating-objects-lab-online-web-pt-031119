@@ -21,7 +21,6 @@ attr_accessor :name, :songs
 
   def add_song(song)
     @songs << song
-    #binding.pry
   end
 
   def self.all
