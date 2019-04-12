@@ -15,6 +15,7 @@ attr_reader :artist
     else
       @artist = Artist.find_or_create_by_name(artist_name)
     end
+    @artist.songs << self
   end
 #Michael Jackson - Black or White - pop.mp3
   def self.new_by_filename(file)
