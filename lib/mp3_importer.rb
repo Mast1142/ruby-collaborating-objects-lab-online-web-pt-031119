@@ -1,10 +1,10 @@
 class MP3Importer
 
- def initialize
+ def initialize(path)
    Dir.entries("your/folder").select {|f| !File.directory? f}
  end
 
- def files(file)
+ def files
  end
 
  def import
