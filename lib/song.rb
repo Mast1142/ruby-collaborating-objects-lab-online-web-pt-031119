@@ -24,6 +24,7 @@ attr_reader :artist
     song_artist = artist_info[0]
     song_genre = artist_info[2]
     song = self.new(song_name)
+    song
   end
 
 
