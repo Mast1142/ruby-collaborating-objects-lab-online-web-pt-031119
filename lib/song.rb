@@ -21,9 +21,6 @@ attr_reader :artist
     song_name = artist_info[1]
     song_artist = artist_info[0]
     song_genre = artist_info[2]
-    song = Artist.add_song(song_name)
-    song.artist = name
-    song
   end
 
 
