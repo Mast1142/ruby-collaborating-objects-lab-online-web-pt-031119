@@ -18,6 +18,7 @@ attr_reader :artist
   end
 
   def self.new_by_filename(file)
+    binding.pry
     nomp3 = file.gsub(".mp3","")
     artist_info = nomp3.split(" - ")
     song_name = artist_info[1]
