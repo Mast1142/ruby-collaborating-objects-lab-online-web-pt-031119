@@ -16,7 +16,7 @@ attr_reader :artist
       @artist = Artist.find_or_create_by_name(artist_name)
     end
   end
-
+#Michael Jackson - Black or White - pop.mp3
   def self.new_by_filename(file)
     nomp3 = file.gsub(".mp3","")
     artist_info = nomp3.split(" - ")
@@ -24,9 +24,7 @@ attr_reader :artist
     song_artist = artist_info[0]
     song_genre = artist_info[2]
     song = self.new(song_name)
-    song
-    #song.name = song_name
-    #song.artist=(song_artist)
+    song.artist=(song_artist)
   end
 
 
