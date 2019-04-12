@@ -9,7 +9,7 @@ attr_accessor :path
  end
 
  def import(list_of_filenames)
-   list_of_filenames.each {|filename| Song.new_by_filename(filename)}
+   list_of_filenames.each {|file| Song.new_by_filename(file)}
 
  end
 
