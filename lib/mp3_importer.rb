@@ -8,8 +8,8 @@ attr_accessor :path
    Dir.entries(path).select {|f| !File.directory? f}
  end
 
- def import(list_of_filenames)
-   list_of_filenames.each {|file| Song.new_by_filename}
+ def import(files)
+   files.each {|files| Song.new_by_filename(files)}
 
  end
 
