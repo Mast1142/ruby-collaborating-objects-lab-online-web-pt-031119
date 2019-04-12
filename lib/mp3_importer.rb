@@ -8,7 +8,9 @@ attr_accessor :path
    Dir.entries(path).select {|f| !File.directory? f}
  end
 
- def import
+ def import(list_of_filenames)
+   list_of_filenames.each {|filename|}
+
  end
 
 end
