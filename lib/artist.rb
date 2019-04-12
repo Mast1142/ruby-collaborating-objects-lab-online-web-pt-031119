@@ -15,7 +15,6 @@ attr_accessor :name, :songs
       self.new(name)
     else
       @@all.detect {|x| x.name == name}
-
     end
   end
 
