@@ -10,8 +10,11 @@ attr_reader :artist
 
   def artist=(artist_name)
     #binding.pry
-    @artist = Artist.find_or_create_by_name(artist_name)
-
+    if artist_name.class == Artist
+      @artist = artist_name
+    else
+      @artist = Artist.find_or_create_by_name(artist_name)
+    end
   end
 
   def self.new_by_filename(file)
