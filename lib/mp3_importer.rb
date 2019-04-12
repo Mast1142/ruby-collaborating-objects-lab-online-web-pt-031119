@@ -1,7 +1,7 @@
 class MP3Importer
-
+attr_accessor :path
  def initialize(path)
-   Dir.entries("your/folder").select {|f| !File.directory? f}
+   Dir.entries(path).select {|f| !File.directory? f}
  end
 
  def files
