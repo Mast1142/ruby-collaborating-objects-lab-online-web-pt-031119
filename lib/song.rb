@@ -29,5 +29,4 @@ attr_reader :artist
     song
   end
 
-
 end
